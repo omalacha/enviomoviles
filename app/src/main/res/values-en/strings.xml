@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vengaAmipueblo2</string>
+    <string name="descripcionhoteles">
+        In jardin antioquia,
+        you will find hotels from 90,000 COP per night with comfortable rooms, excellent service and incredible views.
+    </string>
+
+    <string name="opcion1">Spanish</string>
+    <string name="opcion2">English</string>
+    <string name="opcion3">Portuguese</string>
+    <string name="opcion4">About Us</string>
+    <string name="descripcionrestaurantes">In our town there are different gastronomic places that you can visit
+        and try the different very exotic dishes,with the best sea food</string>
+    <string name="turismo">Do you want to live the best experiences? Here in Arboletes you will find the best experiences
+    in the bolcan del lodo, beach, sun and the different parties</string>
+</resources>

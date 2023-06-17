@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">vengaAmipueblo2</string>
+
+    <string name="descripcionhoteles">En jardin antioquia, encontraras hoteles desde 90.000 COP por noche con comodas habitaciones
+        ,excelente servicio y unas vistas increibles</string>
+
+    <string name="opcion1">Español</string>
+    <string name="opcion2">Ingles</string>
+    <string name="opcion3">Portugues</string>
+    <string name="opcion4">Acerca de</string>
+    <string name="descripcionrestaurantes">En nuestro pueblo hay diferentes lugares gastronomicos que puedes visitar
+        y probar los diferentes platos muy exoticos,con la mejor comida de mar</string>
+    <string name="turismo">¿Quieres vivir las mejores experiencias? Aquí en Arboletes encontrarás las mejores experiencias
+        bolcan de lodo, playa, sol y las diferentes fiestass</string>
+</resources>
