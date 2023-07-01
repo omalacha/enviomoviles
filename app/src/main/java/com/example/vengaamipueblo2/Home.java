@@ -1,6 +1,9 @@
 package com.example.vengaamipueblo2;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 public class Home extends AppCompatActivity {
 
@@ -71,13 +76,19 @@ public class Home extends AppCompatActivity {
         switch(itemSeleccionado){
 
                 case (R.id.opcion1):
-                Toast.makeText(this, "accionaste op1", Toast.LENGTH_SHORT).show();
+                    this.cambiarIdioma("es");
+                    Intent intentespañol=new Intent(Home.this,Home.class);
+                    startActivity(intentespañol);
                 break;
                 case (R.id.opcion2):
-                Toast.makeText(this, "accionaste op2", Toast.LENGTH_SHORT).show();
+                this.cambiarIdioma("en");
+                Intent intenteingles=new Intent(Home.this,Home.class);
+                startActivity(intenteingles);
                 break;
                 case (R.id.opcion3):
-                Toast.makeText(this, "accionaste op3", Toast.LENGTH_SHORT).show();
+                this.cambiarIdioma("pt");
+                    Intent intentportugues=new Intent(Home.this,Home.class);
+                    startActivity(intentportugues);
                 break;
                 case (R.id.opcion4):
                 Toast.makeText(this, "accionaste op4", Toast.LENGTH_SHORT).show();
@@ -86,4 +97,20 @@ public class Home extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //metodo para cambiar el idioma de la app
+
+    public void cambiarIdioma(String idioma){
+
+        //configurando el lenguaje del telefono
+        Locale lenguaje=new Locale(idioma);
+        Locale.setDefault(lenguaje);
+
+        //configracion global en el telefono
+        Configuration configuracionTelefono=getResources().getConfiguration();
+        configuracionTelefono.locale=lenguaje;
+
+        //ejecutamos la configuracion
+        getBaseContext().getResources().updateConfiguration(configuracionTelefono,getBaseContext().getResources().getDisplayMetrics());
+
+    }
 }
